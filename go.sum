@@ -1,0 +1,10 @@
+github.com/blang/semver v3.5.1+incompatible h1:cQNTCjp13qL8KC3Nbxr/y2Bqb63oX6wdnnjpJbkM4JQ=
+github.com/blang/semver v3.5.1+incompatible/go.mod h1:kRBLl5iJ+tD4TcOOxsy/0fnwebNt5EWlYSAyrTnjyyk=
+github.com/pulumi/pulumi-aws/sdk/v6 v6.37.1 h1:U0Z6dagxFsOhV9J16aAjIfEZJf7NU+L9l9aGABQyrNs=
+github.com/pulumi/pulumi-aws/sdk/v6 v6.37.1/go.mod h1:OQXIshEv/eVOYyBPMHADSaLG+qDJKQqP8p9lBy7tkOA=
+github.com/pulumi/pulumi-aws/sdk/v6 v6.42.1 h1:+Ovw3nlICkpmDPajOOpDW4+aTPbnCCDM9DQmEo0ESDM=
+github.com/pulumi/pulumi-aws/sdk/v6 v6.42.1/go.mod h1:F7kTFr3hCyMxKGjPSHtbdFnZdRqgXW+t6bIlOBF6Org=
+github.com/pulumi/pulumi/sdk/v3 v3.117.0 h1:ImIsukZ2ZIYQG94uWdSZl9dJjJTosQSTsOQTauTNX7U=
+github.com/pulumi/pulumi/sdk/v3 v3.117.0/go.mod h1:kNea72+FQk82OjZ3yEP4dl6nbAl2ngE8PDBc0iFAaHg=
+github.com/pulumi/pulumi/sdk/v3 v3.121.0 h1:UsnFKIVOtJN/hQKPkWHL9cZktewPVQRbNUXbXQY/qrk=
+github.com/pulumi/pulumi/sdk/v3 v3.121.0/go.mod h1:p1U24en3zt51agx+WlNboSOV8eLlPWYAkxMzVEXKbnY=

@@ -1,0 +1,9 @@
+name: AwsVpcAndK3sProvision
+runtime: go
+description: Create VPC at AWS and Deploy K3s
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-go
+  aws:region:
+    value: us-southeast-1
