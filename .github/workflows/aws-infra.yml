@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: |
           go mod tidy
-          go install github.com/pulumi/pulumi/sdk/v3
-          go install github.com/pulumi/pulumi-aws/sdk/v6
+          go install github.com/pulumi/pulumi/sdk/v3@latest
+          go install github.com/pulumi/pulumi-aws/sdk/v6@latest
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
