@@ -10,7 +10,7 @@ func main() {
 	pulumi.Run(func(ctx *pulumi.Context) error {
 		// Create VPC
 		vpc, err := ec2.NewVpc(ctx, "myVpc", &ec2.VpcArgs{
-			CidrBlock:          pulumi.String("10.10.0.0/16"),
+			CidrBlock:          pulumi.String("10.11.0.0/16"),
 			EnableDnsHostnames: pulumi.Bool(true),
 			EnableDnsSupport:   pulumi.Bool(true),
 			Tags: pulumi.StringMap{
@@ -24,7 +24,7 @@ func main() {
 		// Create Public Subnet
 		publicSubnet, err := ec2.NewSubnet(ctx, "publicSubnet", &ec2.SubnetArgs{
 			VpcId:               vpc.ID(),
-			CidrBlock:           pulumi.String("10.10.1.0/24"),
+			CidrBlock:           pulumi.String("10.11.1.0/24"),
 			MapPublicIpOnLaunch: pulumi.Bool(true),
 			AvailabilityZone:    pulumi.String("ap-southeast-1a"),
 		})
