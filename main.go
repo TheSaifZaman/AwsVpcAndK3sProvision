@@ -14,7 +14,7 @@ func main() {
 			EnableDnsHostnames: pulumi.Bool(true),
 			EnableDnsSupport:   pulumi.Bool(true),
 			Tags: pulumi.StringMap{
-				"Name": pulumi.String("MyVPC"),
+				"Name": pulumi.String("MyNewVPC"),
 			},
 		})
 		if err != nil {
