@@ -109,7 +109,7 @@ func main() {
 		amiID := "ami-003c463c8207b4dfa" // Replace with a valid AMI ID for your region
 		instanceType := "t3.small"
 
-		// Create EC2 Instances
+		// Create Master Instances
 		masterNode, err := ec2.NewInstance(ctx, "masterNode", &ec2.InstanceArgs{
 			InstanceType:        pulumi.String(instanceType),
 			Ami:                 pulumi.String(amiID),
@@ -122,6 +122,7 @@ func main() {
 			return err
 		}
 
+		// Create Worker1 Instances
 		workerNode1, err := ec2.NewInstance(ctx, "workerNode1", &ec2.InstanceArgs{
 			InstanceType:        pulumi.String(instanceType),
 			Ami:                 pulumi.String(amiID),
@@ -134,6 +135,7 @@ func main() {
 			return err
 		}
 
+		// Create Worker2 Instances
 		workerNode2, err := ec2.NewInstance(ctx, "workerNode2", &ec2.InstanceArgs{
 			InstanceType:        pulumi.String(instanceType),
 			Ami:                 pulumi.String(amiID),
@@ -146,6 +148,7 @@ func main() {
 			return err
 		}
 
+		// Create Nginx Instances
 		nginxInstance, err := ec2.NewInstance(ctx, "nginxInstance", &ec2.InstanceArgs{
 			InstanceType:        pulumi.String(instanceType),
 			Ami:                 pulumi.String(amiID),
