@@ -6,4 +6,4 @@ config:
     value:
       pulumi:template: aws-go
   aws:region:
-    value: us-east-1a
+    value: us-east-1
