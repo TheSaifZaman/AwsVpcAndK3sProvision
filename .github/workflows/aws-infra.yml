@@ -37,11 +37,24 @@ jobs:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         run: pulumi login
 
-      - name: Pulumi Stack Select
-        run: pulumi stack init TheSaifZaman/AwsVpcAndK3sProvision/dev
+      # # For First Time Run It
+      # - name: Pulumi Stack Select
+      #   run: pulumi stack init TheSaifZaman/AwsVpcAndK3sProvision/dev
 
       - name: Pulumi Stack Select
         run: pulumi stack select TheSaifZaman/AwsVpcAndK3sProvision/dev
  
+      # # For Destroy Resources
+      # - name: Pulumi Destroy
+      #   run: pulumi destroy --yes
+        
+      # # For Delete Stack
+      # - name: Pulumi Delete
+      #   run: pulumi stack rm TheSaifZaman/AwsVpcAndK3sProvision/dev
+        
+      # # For Delete Stack without deleting resources
+      # - name: Pulumi Delete
+      #   run: pulumi stack rm TheSaifZaman/AwsVpcAndK3sProvision/dev --force
+
       - name: Pulumi Up
         run: pulumi up --yes
