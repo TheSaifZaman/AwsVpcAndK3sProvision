@@ -38,10 +38,11 @@ jobs:
         run: pulumi login
 
       - name: Pulumi Stack Select
-        run: pulumi stack select TheSaifZaman/AwsVpcAndK3sProvision/dev
+        run: pulumi stack rm TheSaifZaman/AwsVpcAndK3sProvision/dev --force
+      #   run: pulumi stack select TheSaifZaman/AwsVpcAndK3sProvision/dev
 
-      - name: Pulumi Destroy
-        run: pulumi destroy --yes
+      # - name: Pulumi Destroy
+      #   run: pulumi destroy --yes
         
-      - name: Pulumi Up
-        run: pulumi up --yes
+      # - name: Pulumi Up
+      #   run: pulumi up --yes
