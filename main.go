@@ -20,7 +20,7 @@ func main() {
 		if err != nil {
 			return err
 		}
-
+		ctx.Export("masterPublicIp", vpc.ID())
 		// Create Public Subnet
 		publicSubnet, err := ec2.NewSubnet(ctx, "publicSubnet", &ec2.SubnetArgs{
 			VpcId:               vpc.ID(),
