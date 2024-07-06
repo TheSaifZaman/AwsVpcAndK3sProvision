@@ -117,6 +117,7 @@ func main() {
 			KeyName:             keyPair.KeyName,
 			VpcSecurityGroupIds: pulumi.StringArray{securityGroup.ID()},
 			Tags:                pulumi.StringMap{"Name": pulumi.String("master-node")},
+			AvailabilityZone:    pulumi.String("ap-southeast-1a"),
 		})
 		if err != nil {
 			return err
@@ -130,6 +131,7 @@ func main() {
 			KeyName:             keyPair.KeyName,
 			VpcSecurityGroupIds: pulumi.StringArray{securityGroup.ID()},
 			Tags:                pulumi.StringMap{"Name": pulumi.String("worker-node-1")},
+			AvailabilityZone:    pulumi.String("ap-southeast-1a"),
 		})
 		if err != nil {
 			return err
@@ -143,6 +145,7 @@ func main() {
 			KeyName:             keyPair.KeyName,
 			VpcSecurityGroupIds: pulumi.StringArray{securityGroup.ID()},
 			Tags:                pulumi.StringMap{"Name": pulumi.String("worker-node-2")},
+			AvailabilityZone:    pulumi.String("ap-southeast-1a"),
 		})
 		if err != nil {
 			return err
@@ -156,6 +159,7 @@ func main() {
 			KeyName:             keyPair.KeyName,
 			VpcSecurityGroupIds: pulumi.StringArray{securityGroup.ID()},
 			Tags:                pulumi.StringMap{"Name": pulumi.String("nginx-instance")},
+			AvailabilityZone:    pulumi.String("ap-southeast-1a"),
 		})
 		if err != nil {
 			return err
