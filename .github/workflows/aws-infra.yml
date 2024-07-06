@@ -38,7 +38,7 @@ jobs:
         run: pulumi login
 
       - name: Pulumi Stack Select
-        run: pulumi stack init TheSaifZaman/AwsVpcAndK3sProvision/dev --yes
+        run: pulumi stack init TheSaifZaman/AwsVpcAndK3sProvision/dev
 
       - name: Pulumi Stack Select
         run: pulumi stack select TheSaifZaman/AwsVpcAndK3sProvision/dev
