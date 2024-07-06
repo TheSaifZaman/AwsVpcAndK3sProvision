@@ -16,7 +16,6 @@ func main() {
 			Tags: pulumi.StringMap{
 				"Name": pulumi.String("MyNewVPC"),
 			},
-			AvailabilityZone:    pulumi.String("us-east-1a"),
 		})
 		if err != nil {
 			return err
